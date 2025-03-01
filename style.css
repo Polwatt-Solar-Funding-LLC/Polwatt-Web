@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #211e1e;
+    background-color: rgb(43, 32, 32);
     position: fixed;
     width: 95%;
     top: 0;
@@ -51,9 +51,17 @@ nav a {
     cursor: pointer;
 }
 
+.contactus {
+    background-color: #d0ad50;
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: black;
+}
+
 /* Calculator Section */
 .calculator-section {
-    margin-top: 40px;
+    margin-top: 10%auto;
     padding: 30px 20px;
     background-color: #d0ad50;
     color: whitesmoke;
