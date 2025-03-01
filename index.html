@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Polwatt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="POLWATT Logo">
+        </div>
+        <nav>
+            <a href="#">Log In</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>MAXIMIZE YOUR TAX SAVINGS WITH A GOVERNMENT-BACKED INVESTMENT THAT SECURES GUARANTEED RETURNS.</h1>
+        <button class="apply-btn">Apply Now!</button>
+    </section>
+
+    <section class="calculator-section">
+        <h2>COMPUTE TAX SAVINGS</h2>
+        <div class="calculator">
+            <label for="tax2023">TAX LIABILITY - 2023 *</label>
+            <input type="number" id="tax2023" placeholder="Enter amount" min="0">
+    
+            <label for="tax2024">ANTICIPATED TAXES - 2024 *</label>
+            <input type="number" id="tax2024" placeholder="Enter amount" min="0">
+    
+            <button onclick="calculateSavings()">CALCULATE</button>
+            <p id="result">MEDIAN TAX SAVINGS: $0</p>
+        </div>
+    </section>
+    
+    <script>
+        function calculateSavings() {
+            let tax2023 = parseFloat(document.getElementById("tax2023").value) || 0;
+            let tax2024 = parseFloat(document.getElementById("tax2024").value) || 0;
+    
+            if (tax2023 <= 0 || tax2024 <= 0) {
+                document.getElementById("result").innerText = "PLEASE ENTER VALID TAX AMOUNTS.";
+                return;
+            }
+    
+            let savings = (tax2023 + tax2024) * 0.30; // Example: 30% of total tax liability
+            document.getElementById("result").innerText = `MEDIAN TAX SAVINGS: $${savings.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+        }
+    </script>
+</body>
+</html>

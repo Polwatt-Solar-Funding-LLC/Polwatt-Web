@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Header Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #121111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(208,173,80);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 100px;
+    padding: 100px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 800px;
+    margin: auto;
+}
+
+.apply-btn {
+    background-color: rgb(208,173,80);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Calculator Section */
+.calculator-section {
+    margin-top: 50px;
+    padding: 50px 20px;
+    background-color: rgb(208,173,80);
+    color: whitesmoke;
+}
+
+.calculator {
+    background: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.calculator label {
+    display: block;
+    margin-top: 10px;
+}
+
+.calculator input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid rgb(208,173,80);
+}
+
+.calculator button {
+    margin-top: 15px;
+    background-color: rgb(208,173,80);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 10px;
+}
