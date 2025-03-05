@@ -32,16 +32,18 @@ nav a {
     font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
-    margin-top: 100px;
-    padding: 100px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    max-width: 800px;
+    background: url('solar-panels.jpg') no-repeat center center/cover;
+    height: 50vh; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Ensure text is visible */
+    padding: 20px;
     margin: auto;
 }
-
 .apply-btn {
     background-color: #d0ad50;
     border: none;
