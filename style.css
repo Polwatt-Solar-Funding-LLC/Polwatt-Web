@@ -114,3 +114,61 @@ nav a {
     font-size: 12px;
     font-weight: bold
 }
+
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    color: gold;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Team Member */
+.team-member {
+    text-align: center;
+    max-width: 250px;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 213px;
+    height: 244px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid gold;
+}
+
+.team-member .role {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.team-member .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.team-member a {
+    color: gold;
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
